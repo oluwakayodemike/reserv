@@ -1,13 +1,36 @@
 import React from 'react';
-import NavBar from './components/NavBar/NavBar'; // Import NavBar component
-import './App.css'; // Import global styles
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NavBar from './components/NavBar/NavBar';
+import MobileTabs from './components/MobileTabs/MobileTabs'; 
+import HeroSearch from './components/HeroSearch/HeroSearch';
+import PropertyGrid from './components/PropertyGrid/PropertyGrid';
+import PropertyDetails from './components/PropertyDetails/PropertyDetails';
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <h1>Welcome to PACompany!</h1>
-    </div>
+    <Router>
+      <div className="App">
+        <NavBar />
+        <MobileTabs />
+        <main>
+          <Routes>
+            {/* Home page: HeroSearch + PropertyGrid */}
+            <Route 
+              path="/" 
+              element={
+                <>
+                  <HeroSearch />
+                  <PropertyGrid />
+                </>
+              } 
+            />
+            {/* Property details page */}
+            <Route path="/property/:id" element={<PropertyDetails />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 

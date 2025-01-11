@@ -1,0 +1,74 @@
+/* Mobile Tabs Navigation */
+/* Mobile Tabs Navigation */
+.mobile-tabs {
+  display: none; /* Hidden by default */
+  background: white; /* Changed to white */
+  padding: 8px 16px;
+  margin-top: 63px; /* Space for fixed navbar */
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  width: 100%; /* Full width of the container */
+  border-top: 1px solid #ccc; /* Optional: A subtle top border */
+}
+
+.mobile-tabs::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.mobile-tabs-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-tab-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.8); /* Changed to darker color for contrast on white */
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%; /* Circular border */
+  transition: all 0.3s ease; /* Smooth transition for hover and active states */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.mobile-tab-item.active {
+  color: #006CE4; /* Active state color */
+  position: relative;
+}
+
+.mobile-tab-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #006CE4; /* Active tab underline color */
+  border-radius: 2px;
+}
+
+.mobile-tab-icon {
+  margin-bottom: 4px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .mobile-tabs {
+    display: block;
+  }
+  
+  
+  .mobile-tab-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+  }
+}
+

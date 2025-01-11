@@ -1,0 +1,88 @@
+// src/data/propertiesData.js
+
+const properties = [
+    {
+      id: 1,
+      price: 570000,
+      address: '19 S Aurora Ave, Miami',
+      bedrooms: 2,
+      rooms: 3,
+      sqft: 1230,
+      image: 'cardimg1.jpg',  
+      hotPrice: false,
+    },
+    {
+      id: 2,
+      price: 720000,
+      address: '4000 Fox Lake, Miami',
+      bedrooms: 3,
+      rooms: 5,
+      sqft: 1610,
+      image: 'cardimg2.jpg',  
+      hotPrice: true,
+    },
+    {
+      id: 3,
+      price: 570000,
+      address: '19 S Aurora Ave, Miami',
+      bedrooms: 2,
+      rooms: 3,
+      sqft: 1230,
+      image: 'cardimg3.jpg',  
+      hotPrice: false,
+    },
+    {
+      id: 4,
+      price: 720000,
+      address: '4000 Fox Lake, Miami',
+      bedrooms: 3,
+      rooms: 5,
+      sqft: 1610,
+      image: 'cardimg2.jpg',  
+      hotPrice: true,
+    },
+    {
+      id: 5,
+      price: 570000,
+      address: '19 S Aurora Ave, Miami',
+      bedrooms: 2,
+      rooms: 3,
+      sqft: 1230,
+      image: 'cardimg5.jpg',  
+      hotPrice: false,
+    },
+    {
+      id: 6,
+      price: 720000,
+      address: '4000 Fox Lake, Miami',
+      bedrooms: 3,
+      rooms: 5,
+      sqft: 1610,
+      image: 'cardimg4.jpg',  
+      hotPrice: true,
+    },
+    {
+      id: 7,
+      price: 570000,
+      address: '19 S Aurora Ave, Miami',
+      bedrooms: 2,
+      rooms: 3,
+      sqft: 1230,
+      image: 'cardimg1.jpg',  
+      hotPrice: false,
+    },
+    {
+      id: 8,
+      price: 720000,
+      address: '4000 Fox Lake, Miami',
+      bedrooms: 3,
+      rooms: 5,
+      sqft: 1610,
+      image: 'cardimg2.jpg',  
+      hotPrice: true,
+    },
+   
+  ];
+  
+  export default properties;
+  
